@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="assets/images/icon.png" />
+    <title>GIST - Install</title>
+    <script>
+      function iOS() {
+        return (
+          [
+            "iPad Simulator",
+            "iPhone Simulator",
+            "iPod Simulator",
+            "iPad",
+            "iPhone",
+            "iPod",
+            "MacIntel",
+          ].includes(navigator.platform) ||
+          // iPad on iOS 13 detection
+          (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+        );
+      }
+      function redirect() {
+        if (!iOS()) {
+          window.location.replace(
+            "https://play.google.com/store/apps/details?id=com.brewhackers.instawire&hl=en&gl=US"
+          );
+        } else {
+          window.location.replace("https://apps.apple.com/ae/app/gist-tech-news-in-100-words/id1559849614");
+        }
+      }
+    </script>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="GIST" />
+  <body onload="javascript: redirect()">
+    Please wait redirecting...
+  </body>
+</html>
