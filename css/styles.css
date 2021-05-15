@@ -192,6 +192,13 @@ li a {
   color: white;
 }
 
+.iframe {
+  width: 48%;
+  height: 110%;
+  border-radius: 25px;
+  border: 10px solid var(--bs-gray-dark);
+}
+
 @media (max-width: 767px) {
   .div-reverse {
     flex-direction: column-reverse;
@@ -199,6 +206,19 @@ li a {
 
   .store-btn {
     text-align: center;
+  }
+
+  .card-div-decor {
+    max-width: 1070px;
+    margin-top: 1.5rem;
+    border: 0;
+  }
+
+  .iframe {
+    width: calc(100vw * 0.75);
+    height: calc(100vw * 1.5);
+    border-radius: 25px;
+    border: 10px solid var(--bs-gray-dark);
   }
 }
 
